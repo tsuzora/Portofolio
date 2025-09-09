@@ -2,23 +2,54 @@
 <html>
     <time datetime=""></time>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
     </head>
     <body>
+        <p>Pratama Gill Undap</p>
         <span id="tab-bar">
-            <h1>Home</h1>
-            <h1>About</h1>
-            <h1>Projects</h1>
-            <h1>Contact</h1>
+            <h1 id="section-tab">
+                <a href="#home-section">Home</a>
+            </h1>
+            <h1 id="section-tab">
+                <a href="#about-section">About</a>
+            </h1>
+            <h1 id="section-tab">
+                <a href="#project-section">Projects</a>
+                
+            </h1>
+            <h1 id="section-tab">
+                <a href="#contacts-section">Contacts</a>
+                
+            </h1>
         </span>
-        <div id="main-banner">
+        <div id="home-section" style="padding-bottom:6rem">
             <div id="profile-picture">
-                <img src="freaky satano diamond.png" alt="" >
-
+                <img src="Profile Picture.jpg" alt="" style="width:30%;">
             </div>
             <div>
-
+                <p id="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium animi in quis vitae laudantium at magnam nihil ipsa, minima totam, atque tempore quo neque cum recusandae distinctio error debitis?</p>
             </div>
+        </div>
+        <hr>
+        <div id="about-section" style="height: 50%; padding-top:4rem; padding-bottom:4rem">
+            About
+            <div id="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, ex autem. Dolore exercitationem magni sed sequi quaerat assumenda, tempore eius voluptatum saepe ut vel neque repudiandae totam odio provident unde!
+            </div>
+        </div>
+        <hr>
+        <div id="project-section" style="padding-top: 4rem; padding-bottom: 4rem">
+            Projects
+            <div style="display: flex; flex-direction:row; justify-content:space-evenly; height:2rem; padding-top:10%">
+                <span>Project1</span>
+                <span>Project2</span>
+                <span>Project3</span>
+                <span>Project4</span>
+            </div>
+        </div>
+        <hr>
+        <div id="contacts-section" style="padding-top:4rem">
+            Contacts
         </div>
     </body>
     
