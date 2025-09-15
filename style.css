@@ -19,7 +19,7 @@ body{
 
     padding: 0 5%;
     background-color: rgb(43, 81, 112);
-    font-size: 1.25em;
+    font-size: 16px;
     
     z-index: 10;
 }
@@ -133,11 +133,12 @@ body{
 
 
 
-@media (max-width:1920px) {
+@media (min-width:992px) {
     #header-section {
         width: 100vw;
         height: 75px;
     }
+
 
     /* Home/Profile Section */
     #profile-container{
@@ -147,7 +148,7 @@ body{
     }
     #profile-container img {
         width: 1150px;
-        right: -15%;
+        right: -20%;
     }
     #profile-container .big-name-background {
         padding-top: 0.25em;
@@ -165,7 +166,7 @@ body{
         font-size: 0.75em;
         width: 400px;
         top: 65%;
-        left: 20%;
+        right: 60%;
     }
 
     /* About Section */
@@ -187,7 +188,14 @@ body{
     }
 }
 
-@media (max-width:964px) {
+@media (max-width:480px) {
+
+    #header-section p {
+        font-size: 0.75em;    
+    }
+    #header-section a {
+        font-size: 1.5em;    
+    }
     .navbar {
         font-size: 0.75em;
         padding-right: 3%;
@@ -208,7 +216,7 @@ body{
     }
     #profile-container img {
         width: 800px;
-        right:-60%;
+        left:30%;
     }
 
     #profile-container .profile-bg-glow {
@@ -219,7 +227,8 @@ body{
         font-size: 0.5em;
         width: 400px;
         top: 70%;
-        left: 5%;
+        left: -5%;
+        z-index: 3;
     }
 
     /* About Section */
