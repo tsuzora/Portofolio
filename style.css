@@ -133,7 +133,7 @@ body{
 
 
 
-@media (min-width:992px) {
+@media (max-width:1920px) {
     #header-section {
         width: 100vw;
         height: 75px;
