@@ -2,45 +2,47 @@
 <html>
     <time datetime=""></time>
     <head>
-        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p>Pratama Gill Undap</p>
-        <span id="tab-bar">
-            <h1 id="section-tab">
-                <a href="#home-section">Home</a>
-            </h1>
-            <h1 id="section-tab">
-                <a href="#about-section">About</a>
-            </h1>
-            <h1 id="section-tab">
-                <a href="#project-section">Projects</a>
-                
-            </h1>
-            <h1 id="section-tab">
-                <a href="#contacts-section">Contacts</a>
-                
-            </h1>
-        </span>
-        <div id="home-section" style="padding-bottom:6rem">
-            <div id="profile-picture">
-                <img src="Profile Picture.jpg" alt="" style="width:30%;">
+        <span id="header-section">
+            <p>Pratama Gill Undap</p>
+            <div class="navbar">
+                <p class="section-tab">
+                    <a href="#home-section">Home</a>
+                </p>
+                <p class="section-tab">
+                    <a href="#about-section">About</a>
+                </p>
+                <p class="section-tab">
+                    <a href="#project-section">Projects</a>
+                </p>
+                <p class="section-tab">
+                    <a href="#contacts-section">Contacts</a>
+                </p>
             </div>
-            <div>
-                <p id="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium animi in quis vitae laudantium at magnam nihil ipsa, minima totam, atque tempore quo neque cum recusandae distinctio error debitis?</p>
+        </span>
+        <div id="home-section" >
+            <div id="profile-container">
+                <p class="big-name-background">PRATAMA GILL UNDAP</p>
+                <div>
+                    <div class="profile-bg-glow"></div>
+                    <img src="Profile Picture.png" alt="">
+                </div>
+                <p class="short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse modi distinctio magni nemo dicta error necessitatibus voluptatibus et nobis. </p>
             </div>
         </div>
         <hr>
-        <div id="about-section" style="height: 50%; padding-top:4rem; padding-bottom:4rem">
+        <div id="about-section">
             <h3>About</h3>
             <div id="description">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, ex autem. Dolore exercitationem magni sed sequi quaerat assumenda, tempore eius voluptatum saepe ut vel neque repudiandae totam odio provident unde!
             </div>
         </div>
         <hr>
-        <div id="project-section" style="padding-top: 4rem; padding-bottom: 4rem">
+        <div id="project-section">
             <h3>Projects</h3>
-            <div style="display: flex; flex-direction:row; justify-content:space-evenly; height:2rem; padding-top:10%">
+            <div class="project-list">
                 <span>Project1</span>
                 <span>Project2</span>
                 <span>Project3</span>
@@ -48,7 +50,7 @@
             </div>
         </div>
         <hr>
-        <div id="contacts-section" style="padding-top:4rem">
+        <div id="contacts-section">
             <h3>Contacts</h3>
             <div id="contacts-text" style="display: flex; flex-direction:row; justify-content:space-evenly; padding:2rem" >
                 <span>
