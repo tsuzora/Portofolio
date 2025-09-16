@@ -20,7 +20,10 @@ body{
     padding: 0 5%;
     background-color: rgb(43, 81, 112);
     font-size: 16px;
-    
+
+    width: 100vw;
+    height: 10vh;
+
     z-index: 10;
 }
 
@@ -37,7 +40,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-right: 10%;
     gap: 20%;
 }
 .section-tab {
@@ -131,14 +133,14 @@ body{
     background-color: #ffb623;
 }
 
-
-
-@media (max-width:1920px) {
+@media (min-width:1220px) {
     #header-section {
-        width: 100vw;
-        height: 75px;
+        height: 10vh;
     }
 
+    .navbar {
+        padding-right: 10%;
+    }
 
     /* Home/Profile Section */
     #profile-container{
@@ -148,10 +150,10 @@ body{
     }
     #profile-container img {
         width: 1150px;
-        right: -20%;
+        left: 40%;
     }
     #profile-container .big-name-background {
-        padding-top: 0.25em;
+        padding-top: 0.5em;
         font-size: 5em;
         width: 1200px;
         right: 10%;
@@ -166,7 +168,7 @@ body{
         font-size: 0.75em;
         width: 400px;
         top: 65%;
-        right: 60%;
+        left: 5%;
     }
 
     /* About Section */
@@ -188,59 +190,85 @@ body{
     }
 }
 
-@media (max-width:480px) {
+@media (max-width:1221px) and (min-width: 480px){
+
+    #header-section {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 36px;
+        gap: 1vh;
+    }
 
     #header-section p {
-        font-size: 0.75em;    
+        text-align: center;
+        font-size: 0.5em;    
     }
-    #header-section a {
-        font-size: 1.5em;    
-    }
+    
     .navbar {
+        /* background-color: antiquewhite; */
+        align-items: center;
+        width: 80vw;
+        height: 5vh;    
         font-size: 0.75em;
-        padding-right: 3%;
         gap: 3%;
+    }
+    
+    .section-tab a{
+        /* background-color: #ffb623; */
+        font-size: 3em;
+        flex: 1;
     }
 
     /* Home/Profile Section */
     #profile-container{
-        height: 600px;
+        padding-top: 10vh;
+        height: 50vh;
         width: 80%;
         font-size: 36px;
     }
     #profile-container .big-name-background {
-        padding-top: 0.5em;
-        font-size: 2.5em;
-        width: 550px;
-        right: 20%;
+        font-size: 3.5em;
+        width: 750px;
+        right: 10%;
     }
     #profile-container img {
         width: 800px;
-        left:30%;
+        left: 45%;
     }
 
     #profile-container .profile-bg-glow {
-        right: -30%;
-        bottom: -350px;
+        width: 600px;
+        height: 800px;
+        right: -40%;
+        bottom: -40%;
+        opacity: 10%;
     }
     #profile-container .short-description {
-        font-size: 0.5em;
-        width: 400px;
-        top: 70%;
-        left: -5%;
+        font-size: 0.65em;
+        width: 500px;
+        top: 80%;
+        left: 5%;
         z-index: 3;
     }
 
     /* About Section */
     #about-section {
         padding: 15% 5%;
-        height: 520px;
+        height: 40vh;
+        font-size: 36px;
+    }
+
+    #about-section h3 {
+        font-size: 2em;
+    }
+    #about-section #description {
+        padding: 5vh;
     }
 
     /* Project Sections */
     #project-section {
         padding: 15% 5%;
-        height: 840px;
+        height: 60vh;
     }
 
     /* Contacts Sections */
